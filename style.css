@@ -7,6 +7,16 @@ body{
     margin: 0 auto;
 }
 
+h1{
+    font-size: 5rem;
+    font-style: italic;
+}
+
+.col{
+    display: flex;
+    justify-content: center;
+}
+
 .s_card{
     display: flex;
     justify-content: center;

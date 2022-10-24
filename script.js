@@ -14,12 +14,12 @@ const eleNumbersBox = document.querySelector('.s_numbers_box');
 
 for (let n = 1; n <= 100; n++) {
     if ((n % 3 == 0) && (n % 5 == 0)) {
-        console.log('fizzbuzz');
+        eleNumbersBox.innerHTML += `<div class="col"><div class="s_fizzbuzz s_card">FizzBuzz</div></div>`;
     }else if (n % 3 == 0) {
-        console.log('fizz');
+        eleNumbersBox.innerHTML += `<div class="col"><div class="s_fizz s_card">Fizz</div></div>`;
     }else if (n % 5 == 0) {
-        console.log('buzz');
+        eleNumbersBox.innerHTML += `<div class="col"><div class="s_buzz s_card">Buzz</div></div>`;
     }else {
-        eleNumbersBox.innerHTML += `<div class="s_number s_card col">${n}</div>`;
+        eleNumbersBox.innerHTML += `<div class="col"><div class="s_number s_card">${n}</div></div>`;
     }
 }
